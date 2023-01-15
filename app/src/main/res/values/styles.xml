@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="background">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/lightGrey</item>
+    </style>
+
+    <style name="header">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/header_text_size</item>
+        <item name="android:paddingTop">@dimen/margin1</item>
+        <item name="android:paddingBottom">@dimen/margin1</item>
+    </style>
+
+    <style name="loading_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/margin1</item>
+    </style>
+
+    <style name="loading_layout_text">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/loading_layout_text_size</item>
+        <item name="android:layout_marginTop">@dimen/margin2</item>
+    </style>
+
+    <style name="card">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="android:layout_marginStart">@dimen/margin1</item>
+        <item name="android:layout_marginTop">@dimen/margin1</item>
+        <item name="android:layout_marginEnd">@dimen/margin1</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="card_name">
+        <item name="android:text">@string/card_header</item>
+        <item name="android:textSize">@dimen/text1</item>
+    </style>
+
+    <style name="gray_line">
+        <item name="android:background">@color/lightGrey</item>
+        <item name="android:layout_marginTop">@dimen/margin2</item>
+    </style>
+
+    <style name="points">
+        <item name="android:text">200</item>
+        <item name="android:textSize">@dimen/text0</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="points_text">
+        <item name="android:text">баллов</item>
+        <item name="android:textSize">@dimen/text2</item>
+        <item name="android:layout_marginStart">@dimen/margin2</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="cashback_header">
+        <item name="android:text">Кэшбэк</item>
+        <item name="android:textSize">@dimen/text3</item>
+        <item name="android:layout_marginTop">@dimen/margin1</item>
+    </style>
+
+    <style name="level_header">
+        <item name="android:text">Уровень</item>
+        <item name="android:textSize">@dimen/text3</item>
+        <item name="android:layout_marginTop">@dimen/margin1</item>
+        <item name="android:layout_marginStart">@dimen/margin3</item>
+    </style>
+
+    <style name="cashback">
+        <item name="android:text">1 %</item>
+        <item name="android:textSize">@dimen/text4</item>
+        <item name="android:layout_marginTop">@dimen/margin2</item>
+    </style>
+
+    <style name="level">
+        <item name="android:text">Базовый уровень тест</item>
+        <item name="android:textSize">@dimen/text4</item>
+        <item name="android:layout_marginTop">@dimen/margin2</item>
+    </style>
+
+    <style name="details">
+        <item name="android:text">Подробнее</item>
+        <item name="android:textSize">@dimen/text4</item>
+        <item name="android:minHeight">@dimen/details_min_height</item>
+        <item name="android:backgroundTint">@color/lightGrey</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/details_corner_radius</item>
+        <item name="android:layout_marginTop">@dimen/margin2</item>
+    </style>
+
+    <style name="trash">
+        <item name="android:layout_marginTop">@dimen/margin1</item>
+        <item name="android:layout_marginEnd">@dimen/margin3</item>
+        <item name="android:tint">@color/red</item>
+        <item name="srcCompat">@drawable/trash_white</item>
+    </style>
+
+    <style name="eye">
+        <item name="android:layout_marginTop">@dimen/margin1</item>
+        <item name="android:layout_marginEnd">@dimen/margin3</item>
+        <item name="android:tint">@color/blue</item>
+        <item name="srcCompat">@drawable/eye_white</item>
+    </style>
+
+    <dimen name="card_corner_radius">30dp</dimen>
+    <dimen name="details_corner_radius">6dp</dimen>
+    <dimen name="gray_line_height">1dp</dimen>
+    <dimen name="details_min_height">0dp</dimen>
+
+</resources>

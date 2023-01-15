@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin1">
+
+        <TextView
+            android:id="@+id/card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/card_name"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@color/black"/>
+
+        <View
+            android:id="@+id/gray_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gray_line_height"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/gray_line"/>
+
+        <LinearLayout
+            android:id="@+id/points_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/gray_line"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/margin1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/points"/>
+
+            <TextView
+                android:id="@+id/points_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/points_text"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cashback_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/points_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/cashback_header"/>
+
+        <TextView
+            android:id="@+id/level_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/points_layout"
+            app:layout_constraintStart_toEndOf="@id/cashback_header"
+            style="@style/level_header"/>
+
+        <TextView
+            android:id="@+id/cashback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cashback_header"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/cashback"/>
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/level_header"
+            app:layout_constraintStart_toStartOf="@id/level_header"
+            style="@style/level"/>
+
+        <View
+            android:id="@+id/gray_line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gray_line_height"
+            app:layout_constraintTop_toBottomOf="@id/level"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/gray_line"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/gray_line2"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/details"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/trash"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            app:layout_constraintTop_toBottomOf="@id/gray_line2"
+            app:layout_constraintEnd_toStartOf="@id/details"
+            style="@style/trash"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/eye"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            app:layout_constraintTop_toBottomOf="@id/gray_line2"
+            app:layout_constraintEnd_toStartOf="@id/trash"
+            style="@style/eye"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BonusMoneyTest</string>
+    <string name="header_text">Управление картами</string>
+    <string name="loading_layout_text">Подгрузка компаний</string>
+    <string name="card_header">Bonus Money</string>
+    <string name="ok">OK</string>
+    <string name="percent"> %</string>
+    <string name="details">Подробнее</string>
+    <string name="trash">Корзина</string>
+    <string name="eye">Глаз</string>
+    <string name="AuthorizationError">Ошибка авторизации</string>
+    <string name="Error">Ошибка</string>
+    <string name="BadRequest">Все упало</string>
+    <string name="DialogAlertTitle">Dialog alert</string>
+</resources>
